@@ -1,4 +1,5 @@
-from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
 from .views import inicio, PS5, accion, deporte, simulacion, terror, registro, login, juego
 
 urlpatterns = [
