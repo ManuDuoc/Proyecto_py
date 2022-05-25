@@ -12,6 +12,7 @@ class Categoria(models.Model):
 
 class Juego(models.Model):
     idJuego = models.IntegerField(primary_key = True, verbose_name= 'Id del juego')
+    titulo = models.CharField(max_length = 30, verbose_name= 'Titulo del Juego')
     nombreJuego = models.CharField(max_length = 30, verbose_name= 'Nombre del Juego')
     precioJuego = models.IntegerField(verbose_name= 'Precio del Juego')
     foto = models.ImageField(upload_to="juegos", null= True)
