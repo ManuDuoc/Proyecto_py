@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import inicio, PS5, accion, deporte, simulacion, terror, registro, login, juego
+from .views import inicio, PS5, accion, deporte, simulacion, terror, registro, login, juego,administrador
 
 urlpatterns = [
     path('', inicio,name="Principal"),
@@ -12,4 +12,5 @@ urlpatterns = [
     path('registro', registro,name="registro"),
     path('login', login,name="login"),
     path('juego', juego,name="juego"),
+    path('administrador',administrador,name='administrador'),
 ]
