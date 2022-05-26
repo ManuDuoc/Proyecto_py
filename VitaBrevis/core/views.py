@@ -29,6 +29,10 @@ def terror(request):
 def administrador(request):
     return render(request,'core/administrador.html')    
 
+def añadirjuego(request):
+    return render(request,'core/añadirjuego.html')
+
+
 def juego(request):
     contexto = {"titulo":"Fifa 22","ImagenJ":"/static/core/img/Deportes/fifa_22.jpeg",
                 "NombreJ":"Fifa 22 Key",
